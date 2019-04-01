@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_player"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/bgnew"
+
+    tools:context="com.example.dell.mainproject.Player">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Name1:"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:textColorLink="?attr/colorControlActivated"
+        android:textCursorDrawable="@android:drawable/bottom_bar"
+        android:id="@+id/name"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="73dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/name1"
+
+       android:layout_marginTop="73dp"
+        android:fontFamily="serif"
+        android:textColorLink="?attr/colorControlActivated"
+        android:layout_toRightOf="@+id/name"
+        android:layout_toEndOf="@+id/name" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:text="Enter Name2:"
+        android:textSize="25dp"
+        android:fontFamily="serif"
+        android:id="@+id/name2"
+        android:textColorLink="?attr/colorControlActivated"
+
+        android:layout_below="@+id/name1"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="37dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:fontFamily="serif"
+        android:textColorLink="?attr/colorControlActivated"
+        android:id="@+id/name22"
+        android:layout_alignBaseline="@+id/name2"
+        android:layout_alignBottom="@+id/name2"
+        android:layout_toRightOf="@+id/name2"
+        android:layout_toEndOf="@+id/name2" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NEXT"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:fontFamily="serif"
+        android:textColorLink="?attr/colorControlActivated"
+        android:textCursorDrawable="@android:drawable/bottom_bar"
+        android:layout_marginBottom="90dp"
+        android:id="@+id/btnnext"
+        android:onClick="next"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <Button
+        android:text="BACK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="34dp"
+        android:layout_marginStart="34dp"
+        android:id="@+id/btnback"
+        android:fontFamily="serif"
+        style="@android:style/Widget.DeviceDefault.Button.Inset"
+        android:textColorLink="?attr/colorControlActivated"
+        android:textCursorDrawable="@android:drawable/bottom_bar"
+        android:layout_alignBaseline="@+id/btnnext"
+        android:layout_alignBottom="@+id/btnnext"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>
